@@ -3,7 +3,7 @@
     <head>
         <title>Student Registration Form</title>
     </head>
-    <body>
+    <body style="width: 100%;">
         <form action="">
             <div id="reg_form">
                 <div id="reg_title"> 
@@ -23,15 +23,45 @@
                 <div id="second_cont">
                     <div id="add" style="width: 100%; float: left;">
                         Address:
-                        <textarea name="add" id="" cols="30" rows="10"></textarea>
+                        <textarea name="add" id="" cols="30" rows="5"></textarea>
                     </div>
-                    <div id="state" style="width: 100%; float: left;">
+                    <div id="state" style="width: 100%; float: right;">
                         State:<select name="" id="">
                             <option value="ap">Andhra pradesh</option>
                             <option value="ts">Telangana</option>
                             <option value="as">Assam</option>
                             <option value="bh">Bihar</option>
                         </select>
+                    </div>
+                </div>
+                <div id="third_cont">
+                    <div>
+                        <div id="mobil_num" style="width: 45%; float: left;"> 
+                           Mobile number: <input type="number" name="number" id="number_box"> 
+                        </div>
+                        <div id="Email" style="width: 45%; float: left;">
+                            Email: <input type="email" name="email" id="email_box">
+                        </div>
+                    </div>
+                    <div id="fourth_cont">
+                        <div id="gender" style="width: 45%; float: left;">
+                            Gender: <input type="radio" name="gender" id="male_box" value="male">male
+                                    <input type="radio" name="gender" id="female_box" value="female">Female
+                                    <input type="radio" name="gender" id="other_box" value="others">Others
+                        </div>
+                        <div id="edu" style="width: 45%; float: left;">
+                            Eduation: <select name="edu" id="edu_box">
+                                <option value="select">Select</option>
+                                <option value="ssc">SSC</option>
+                                <option value="Inter">INTER</option>
+                                <option value="Ug">Under Graduate</option>
+                                <option value="pg">Post Graduate</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="btn" style="width: 45%; float: left;">
+                        <button>submit</button>
+
                     </div>
                 </div>
             </div>
